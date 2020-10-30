@@ -1,0 +1,18 @@
+
+<div class="card-contain">
+    <div  class="card-main">
+        <div class="item1" *ngFor="let item of selectedValue">
+            {{item.value}}
+          <div class="selectedValue"  >
+            <button name="item"    style="margin-left: 10px;">
+            <i name="{{item.name}}" value={{item.value}} (click)="clearData($event)" class="fa fa-window-close"></i>
+            </button> </div>    
+        </div>
+    </div>
+    
+    
+    
+    <button class="clear" value={{clear}} name="clear" (click)="clearData($event)" >Clear</button>
+</div>
+
+

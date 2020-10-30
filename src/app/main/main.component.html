@@ -1,0 +1,16 @@
+<div >
+    <header class="header">
+        
+    </header>
+  
+   <div class="outer">
+    <div *ngIf="getTrue" id="searchBlock">
+      <app-single-card (childEvent1)="clear=$event" [selectedValue]="selectorArr"></app-single-card>
+    </div>
+
+    <div  >
+      <app-card (childEvent)="message=$event" [listOfJobs]="updatedJObs"></app-card>
+    </div>
+   </div>
+       
+</div>

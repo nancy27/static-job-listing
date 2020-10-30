@@ -1,0 +1,46 @@
+.card-contain{
+   
+}
+.clear{
+    width: 10%;
+    position: absolute;
+    float: right;
+    right: 10px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-align: center;
+    /* opacity: 0.5; */
+    color: hsl(180, 29%, 50%);
+    font-size: medium;
+}
+.card-main{
+    width:80%;
+    float: left;
+    display: inline-flex;
+}
+
+.item1 {
+   
+    background-color: hsl(180, 52%, 96%);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 600;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.selectedValue button{
+    cursor: pointer;
+    color: hsl(180, 29%, 50%);
+    border:none;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

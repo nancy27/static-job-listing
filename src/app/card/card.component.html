@@ -1,0 +1,38 @@
+
+<div class="mainContain" *ngFor="let item of listOfJobs">
+    <div class="contain1">
+        <img src="{{item.logo}}"  />
+    </div>
+    
+     <div class="contain2">
+        <div id="line1">
+            <span style="color: hsl(180, 29%, 50%);margin-right: 10px;">{{item.company}}</span>
+            <button class="new" *ngIf="item.new">New!</button>
+            <button class="new" style="background-color: black;" *ngIf="item.featured">Featured</button>
+         </div>
+        <div style="font-weight: 300;" id="line2">{{item.position}}</div>
+        <div id="line3">
+            <span style="margin-right: 10px;">{{item.postedAt}}</span>
+           <li><span style="margin-right: 10px;">{{item.contract}}</span></li> 
+           <li> <span>{{item.location}}</span></li>
+        </div>
+     </div>
+     <div class="contain3">
+        
+        <div class="item1" *ngIf="item.role"><button name="role"   value="{{item.role}}" (click)="getButton($event,item)">{{item.role}}</button></div>
+        <div class="item1" *ngIf="item.level"><button name="level" value={{item.level}} (click)="getButton($event,item)">{{item.level}}</button></div>
+        <div class="item1" id="tools" *ngFor="let item1 of item.tools">
+           
+            <button name="tools" value={{item1}} (click)="getButton($event,item)">{{item1}}</button>
+        </div>
+        <div class="item1" id="languages" *ngFor="let item1 of item.languages">
+           
+            <button name="languages" value={{item1}} (click)="getButton($event,item)">{{item1}}</button>
+        </div>
+
+     </div>
+    
+</div>
+
+
+
